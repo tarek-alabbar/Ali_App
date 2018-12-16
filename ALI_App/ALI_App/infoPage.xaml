@@ -5,6 +5,6 @@
              x:Class="ALI_App.Page1">
 
     <StackLayout>
-        <Label x:Name="TheLable" Text="testLable" TextDecorations="Strikethrough"/>
+        <Entry Placeholder="Can you see me ?" />
     </StackLayout>
 </ContentPage>

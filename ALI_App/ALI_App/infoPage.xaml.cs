@@ -12,21 +12,9 @@ namespace ALI_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class InfoPage : ContentPage
 	{
-		public InfoPage (string data)
+		public InfoPage ()
 		{
-            Label label = new Label
-            {
-                Text = "Hello World " + data
-            };
-
-            Content = new StackLayout
-            {
-                Children =
-                {
-                    label
-                }
-            };
-            Title = "The Info Page";
-		}
+           
+        }
 	}
 }
