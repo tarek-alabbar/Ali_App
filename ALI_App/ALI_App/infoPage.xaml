@@ -5,7 +5,6 @@
              x:Class="ALI_App.Page1">
 
     <StackLayout>
-        <Entry Placeholder="HelloWorld" ></Entry>
-        
+        <Label x:Name="TheLable" Text="testLable" TextDecorations="Strikethrough"/>
     </StackLayout>
 </ContentPage>

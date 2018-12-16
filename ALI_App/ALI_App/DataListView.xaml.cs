@@ -35,7 +35,9 @@ namespace ALI_App
             if (e.Item == null)
                 return;
 
-            await Navigation.PushAsync(new InfoPage());
+            string data = e.Item.ToString();
+
+            await Navigation.PushAsync(new InfoPage(data));
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
