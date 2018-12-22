@@ -4,9 +4,7 @@
              x:Class="ALI_App.InfoPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="showDataLable"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

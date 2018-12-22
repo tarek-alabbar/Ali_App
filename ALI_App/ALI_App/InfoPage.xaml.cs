@@ -12,9 +12,11 @@ namespace ALI_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class InfoPage : ContentPage
 	{
-		public InfoPage ()
+		public InfoPage (string testData)
 		{
 			InitializeComponent ();
+            showDataLable.Text = testData;
+            //Name.Text = "Text changed";
 		}
 	}
 }

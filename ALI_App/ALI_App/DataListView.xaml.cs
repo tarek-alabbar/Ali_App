@@ -37,7 +37,7 @@ namespace ALI_App
 
             string data = e.Item.ToString();
 
-            await Navigation.PushAsync(new InfoPage());
+            await Navigation.PushAsync(new InfoPage(data));
             //await DisplayAlert("Title", "Teastin", "Alright");
 
             //Deselect Item
