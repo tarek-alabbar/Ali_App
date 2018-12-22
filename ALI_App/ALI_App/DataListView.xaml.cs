@@ -14,17 +14,17 @@ namespace ALI_App
     {
         public ObservableCollection<string> Items { get; set; }
 
-        public DataListView()
+        public DataListView(string searchKeyWord)
         {
             InitializeComponent();
 
             Items = new ObservableCollection<string>
             {
-                "Item 1",
-                "Item 2",
-                "Item 3",
-                "Item 4",
-                "Item 5"
+                "Item 1 " + searchKeyWord,
+                "Item 2 " + searchKeyWord,
+                "Item 3 " + searchKeyWord,
+                "Item 4 " + searchKeyWord,
+                "Item 5 " + searchKeyWord
             };
 			
 			MyListView.ItemsSource = Items;

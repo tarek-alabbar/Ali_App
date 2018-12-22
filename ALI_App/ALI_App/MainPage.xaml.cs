@@ -16,15 +16,16 @@ namespace ALI_App
 
         private void byNameSearchButton_Clicked(object sender, EventArgs e)
         {
-            string name = byNameSearchEntry.Text;
+            string byNameKeyWord = byNameSearchEntry.Text;
             //DisplayAlert("Hello", "This is the Search by NAME button: " + name, "Ok");
-            Navigation.PushAsync(new DataListView());
+            Navigation.PushAsync(new DataListView(byNameKeyWord));
         }
 
         private void byPlaceSearchButton_Clicked(object sender, EventArgs e)
         {
-            string place = byPlaceSearchEntry.Text;
-            DisplayAlert("Hello", "This is the Search by PLACE button: " + place, "Ok");
+            string byPlaceKeyWord = byPlaceSearchEntry.Text;
+            Navigation.PushAsync(new DataListView(byPlaceKeyWord));
+            //DisplayAlert("Hello", "This is the Search by PLACE button: " + byPlaceKeyWord, "Ok");
         }
     }
 }
